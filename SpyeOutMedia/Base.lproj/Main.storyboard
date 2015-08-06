@@ -153,7 +153,72 @@
                     <view key="view" contentMode="scaleToFill" id="qJO-nm-iw5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZl-Tr-B8l">
+                                <rect key="frame" x="0.0" y="255" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hFd-9C-c8Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gqk-x2-NbJ">
+                                <rect key="frame" x="0.0" y="303" width="600" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sma-CS-N9a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-9g-TZv">
+                                <rect key="frame" x="0.0" y="351" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xJT-WB-yri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bm3-Hj-mMS">
+                                <rect key="frame" x="0.0" y="401" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kKR-US-Y0R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sign In with Twitter">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spyeoutlogo" translatesAutoresizingMaskIntoConstraints="NO" id="G5y-11-hwC">
+                                <rect key="frame" x="200" y="72" width="200" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Ptn-OH-i0A"/>
+                                    <constraint firstAttribute="height" constant="175" id="pmV-sq-8mK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="G5y-11-hwC" secondAttribute="centerX" id="7pK-3n-BFE"/>
+                            <constraint firstItem="Bm3-Hj-mMS" firstAttribute="leading" secondItem="qJO-nm-iw5" secondAttribute="leading" id="CLG-ot-IZt"/>
+                            <constraint firstItem="uZl-Tr-B8l" firstAttribute="top" secondItem="G5y-11-hwC" secondAttribute="bottom" constant="8" id="DCN-HR-bjy"/>
+                            <constraint firstAttribute="trailing" secondItem="Gqk-x2-NbJ" secondAttribute="trailing" id="GYq-bM-aDN"/>
+                            <constraint firstItem="0ZE-9g-TZv" firstAttribute="leading" secondItem="qJO-nm-iw5" secondAttribute="leading" id="LEN-zs-VhF"/>
+                            <constraint firstAttribute="trailing" secondItem="0ZE-9g-TZv" secondAttribute="trailing" id="NJW-ce-DhR"/>
+                            <constraint firstItem="Bm3-Hj-mMS" firstAttribute="top" secondItem="0ZE-9g-TZv" secondAttribute="bottom" id="TnG-ah-aLX"/>
+                            <constraint firstItem="G5y-11-hwC" firstAttribute="top" secondItem="va2-zB-EY6" secondAttribute="bottom" constant="8" id="UuH-ew-y9k"/>
+                            <constraint firstItem="Gqk-x2-NbJ" firstAttribute="top" secondItem="uZl-Tr-B8l" secondAttribute="bottom" constant="8" id="Y8i-ap-Fkn"/>
+                            <constraint firstItem="uZl-Tr-B8l" firstAttribute="leading" secondItem="qJO-nm-iw5" secondAttribute="leading" id="b9h-qE-etJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Bm3-Hj-mMS" secondAttribute="trailing" id="e6Q-sc-WFh"/>
+                            <constraint firstItem="Gqk-x2-NbJ" firstAttribute="leading" secondItem="qJO-nm-iw5" secondAttribute="leading" id="gXT-tZ-bCc"/>
+                            <constraint firstItem="0ZE-9g-TZv" firstAttribute="top" secondItem="Gqk-x2-NbJ" secondAttribute="bottom" constant="8" id="k9Q-Rh-JbG"/>
+                            <constraint firstAttribute="trailing" secondItem="uZl-Tr-B8l" secondAttribute="trailing" id="lrH-rx-f0A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Authentication" id="efQ-zo-iuE">
                         <barButtonItem key="rightBarButtonItem" title="Log In" id="kai-rv-KuK"/>
@@ -258,4 +323,7 @@
             <point key="canvasLocation" x="134" y="-1100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="spyeoutlogo" width="393" height="242"/>
+    </resources>
 </document>
