@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851B8E811B74578900C41415 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E801B74578900C41415 /* AuthViewController.m */; };
+		851B8E851B7457A400C41415 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E841B7457A400C41415 /* HomeViewController.m */; };
+		851B8E881B7457B600C41415 /* ChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E871B7457B600C41415 /* ChannelsViewController.m */; };
+		851B8E8B1B7457E600C41415 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E8A1B7457E600C41415 /* EventsViewController.m */; };
+		851B8E8E1B7457FC00C41415 /* MyChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E8D1B7457FC00C41415 /* MyChannelViewController.m */; };
+		851B8E911B7458F100C41415 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E901B7458F100C41415 /* ContentViewController.m */; };
+		851B8E931B745C6300C41415 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851B8E921B745C6300C41415 /* MapKit.framework */; };
 		857752AD1B73ED5600A462AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 857752AC1B73ED5600A462AF /* main.m */; };
 		857752B01B73ED5600A462AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 857752AF1B73ED5600A462AF /* AppDelegate.m */; };
 		857752B61B73ED5600A462AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857752B41B73ED5600A462AF /* Main.storyboard */; };
@@ -26,6 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		851B8E7F1B74578900C41415 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		851B8E801B74578900C41415 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		851B8E831B7457A400C41415 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		851B8E841B7457A400C41415 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		851B8E861B7457B600C41415 /* ChannelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsViewController.h; sourceTree = "<group>"; };
+		851B8E871B7457B600C41415 /* ChannelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsViewController.m; sourceTree = "<group>"; };
+		851B8E891B7457E600C41415 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		851B8E8A1B7457E600C41415 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		851B8E8C1B7457FC00C41415 /* MyChannelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChannelViewController.h; sourceTree = "<group>"; };
+		851B8E8D1B7457FC00C41415 /* MyChannelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChannelViewController.m; sourceTree = "<group>"; };
+		851B8E8F1B7458F100C41415 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		851B8E901B7458F100C41415 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		851B8E921B745C6300C41415 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		857752A71B73ED5600A462AF /* SpyeOutMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyeOutMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857752AB1B73ED5600A462AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857752AC1B73ED5600A462AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851B8E931B745C6300C41415 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +78,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		851B8E821B74578F00C41415 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				851B8E831B7457A400C41415 /* HomeViewController.h */,
+				851B8E841B7457A400C41415 /* HomeViewController.m */,
+				851B8E861B7457B600C41415 /* ChannelsViewController.h */,
+				851B8E871B7457B600C41415 /* ChannelsViewController.m */,
+				851B8E891B7457E600C41415 /* EventsViewController.h */,
+				851B8E8A1B7457E600C41415 /* EventsViewController.m */,
+				851B8E8C1B7457FC00C41415 /* MyChannelViewController.h */,
+				851B8E8D1B7457FC00C41415 /* MyChannelViewController.m */,
+				851B8E8F1B7458F100C41415 /* ContentViewController.h */,
+				851B8E901B7458F100C41415 /* ContentViewController.m */,
+				851B8E7F1B74578900C41415 /* AuthViewController.h */,
+				851B8E801B74578900C41415 /* AuthViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		8577529E1B73ED5600A462AF = {
 			isa = PBXGroup;
 			children = (
+				851B8E921B745C6300C41415 /* MapKit.framework */,
 				857752A91B73ED5600A462AF /* SpyeOutMedia */,
 				857752C31B73ED5700A462AF /* SpyeOutMediaTests */,
 				857752A81B73ED5600A462AF /* Products */,
@@ -81,6 +122,7 @@
 				857752AE1B73ED5600A462AF /* AppDelegate.h */,
 				857752AF1B73ED5600A462AF /* AppDelegate.m */,
 				857752B41B73ED5600A462AF /* Main.storyboard */,
+				851B8E821B74578F00C41415 /* Controllers */,
 				857752B71B73ED5600A462AF /* Images.xcassets */,
 				857752B91B73ED5700A462AF /* LaunchScreen.xib */,
 				857752AA1B73ED5600A462AF /* Supporting Files */,
@@ -215,7 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				857752B01B73ED5600A462AF /* AppDelegate.m in Sources */,
+				851B8E8B1B7457E600C41415 /* EventsViewController.m in Sources */,
+				851B8E8E1B7457FC00C41415 /* MyChannelViewController.m in Sources */,
+				851B8E811B74578900C41415 /* AuthViewController.m in Sources */,
+				851B8E911B7458F100C41415 /* ContentViewController.m in Sources */,
 				857752AD1B73ED5600A462AF /* main.m in Sources */,
+				851B8E851B7457A400C41415 /* HomeViewController.m in Sources */,
+				851B8E881B7457B600C41415 /* ChannelsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +460,7 @@
 				857752CC1B73ED5700A462AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		857752CD1B73ED5700A462AF /* Build configuration list for PBXNativeTarget "SpyeOutMediaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +469,7 @@
 				857752CF1B73ED5700A462AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

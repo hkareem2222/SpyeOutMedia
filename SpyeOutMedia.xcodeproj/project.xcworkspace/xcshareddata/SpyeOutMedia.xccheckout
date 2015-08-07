@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E3898D00-FC93-4C51-A1F5-F0D8A1E3146D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SpyeOutMedia</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E49D63105388169E8095DDB650016D55421C3E48</key>
 		<string>github.com:hkareem2222/SpyeOutMedia.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SpyeOutMedia.xcodeproj/project.xcworkspace</string>
+	<string>SpyeOutMedia.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E49D63105388169E8095DDB650016D55421C3E48</key>
