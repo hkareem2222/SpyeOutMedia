@@ -98,11 +98,11 @@
             </objects>
             <point key="canvasLocation" x="1563" y="-356"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="aTV-Ny-PXq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDB-W4-NwO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IxQ-ni-7Y6"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="IxQ-ni-7Y6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7st-9l-ygF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -636,11 +636,11 @@
             </objects>
             <point key="canvasLocation" x="850" y="-1100"/>
         </scene>
-        <!--Item-->
+        <!--Channels-->
         <scene sceneID="xQG-Og-ayq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HEg-Xn-jd3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="spe-S3-XCz"/>
+                    <tabBarItem key="tabBarItem" title="Channels" image="channels" id="spe-S3-XCz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K1U-D3-dcI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -655,11 +655,11 @@
             </objects>
             <point key="canvasLocation" x="1662" y="367"/>
         </scene>
-        <!--Item-->
+        <!--Content-->
         <scene sceneID="Oo8-X6-0a0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KYH-KA-DY9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="S4P-sa-TIm"/>
+                    <tabBarItem key="tabBarItem" title="Content" image="camera" id="S4P-sa-TIm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PmT-z6-c1S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -674,11 +674,11 @@
             </objects>
             <point key="canvasLocation" x="1662" y="1090"/>
         </scene>
-        <!--Item-->
+        <!--Events-->
         <scene sceneID="TIw-Pt-gr3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNJ-D3-WAr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="g25-99-W9S"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="events" id="g25-99-W9S"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gWz-zF-qZa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -693,11 +693,11 @@
             </objects>
             <point key="canvasLocation" x="850" y="1822"/>
         </scene>
-        <!--Item-->
+        <!--My Channel-->
         <scene sceneID="bBb-cd-3Qe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RD3-eN-z8r" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="r4e-Re-XVy"/>
+                    <tabBarItem key="tabBarItem" title="My Channel" image="channel" id="r4e-Re-XVy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUS-xn-DIW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -732,7 +732,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="35" height="35"/>
+        <image name="channel" width="35" height="35"/>
+        <image name="channels" width="35" height="35"/>
+        <image name="events" width="35" height="35"/>
         <image name="fifa" width="500" height="273"/>
+        <image name="home" width="35" height="35"/>
         <image name="profile" width="316" height="305"/>
         <image name="spyeoutlogo" width="393" height="242"/>
     </resources>
