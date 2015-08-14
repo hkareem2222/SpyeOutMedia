@@ -14,6 +14,8 @@
 		851B8E8E1B7457FC00C41415 /* MyChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E8D1B7457FC00C41415 /* MyChannelViewController.m */; };
 		851B8E911B7458F100C41415 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 851B8E901B7458F100C41415 /* ContentViewController.m */; };
 		851B8E931B745C6300C41415 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851B8E921B745C6300C41415 /* MapKit.framework */; };
+		8546F0561B7D228A00778CE9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8546F0541B7D228A00778CE9 /* Fabric.framework */; };
+		8546F0571B7D228A00778CE9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8546F0551B7D228A00778CE9 /* Crashlytics.framework */; };
 		857752AD1B73ED5600A462AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 857752AC1B73ED5600A462AF /* main.m */; };
 		857752B01B73ED5600A462AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 857752AF1B73ED5600A462AF /* AppDelegate.m */; };
 		857752B61B73ED5600A462AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857752B41B73ED5600A462AF /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		851B8E8F1B7458F100C41415 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		851B8E901B7458F100C41415 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		851B8E921B745C6300C41415 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8546F0541B7D228A00778CE9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8546F0551B7D228A00778CE9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		857752A71B73ED5600A462AF /* SpyeOutMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyeOutMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857752AB1B73ED5600A462AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857752AC1B73ED5600A462AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				851B8E931B745C6300C41415 /* MapKit.framework in Frameworks */,
+				8546F0571B7D228A00778CE9 /* Crashlytics.framework in Frameworks */,
+				8546F0561B7D228A00778CE9 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +139,8 @@
 		857752AA1B73ED5600A462AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8546F0541B7D228A00778CE9 /* Fabric.framework */,
+				8546F0551B7D228A00778CE9 /* Crashlytics.framework */,
 				857752AB1B73ED5600A462AF /* Info.plist */,
 				857752AC1B73ED5600A462AF /* main.m */,
 			);
@@ -166,6 +174,7 @@
 				857752A31B73ED5600A462AF /* Sources */,
 				857752A41B73ED5600A462AF /* Frameworks */,
 				857752A51B73ED5600A462AF /* Resources */,
+				8546F0531B7D224C00778CE9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +259,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8546F0531B7D224C00778CE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 750de74697568eb44d8f73e2011e553f48ba8373 8cb5c7b3c86a6c3b871a1c0b9e6802c61059531c8dd1d652d484a52557d35a82";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		857752A31B73ED5600A462AF /* Sources */ = {
@@ -391,6 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpyeOutMedia",
+				);
 				INFOPLIST_FILE = SpyeOutMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpyeOutMedia",
+				);
 				INFOPLIST_FILE = SpyeOutMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
